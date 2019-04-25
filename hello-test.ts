@@ -1,4 +1,3 @@
-import hello from './hello'
 import chai, {expect} from 'chai'
 
 (chai as any).Assertion.addMethod("trimmedEqual", function (expectedString: string) {
@@ -15,9 +14,8 @@ declare global {
   }
 }
 
-describe('hello', () => {
-  it('should give hello words to given name', () => {
-    const words = hello('typescript')
+describe('chai', () => {
+  it('should work with added method', () => {
     expect('      Hello ').to.trimmedEqual(' Hello         ')
   })
 })
