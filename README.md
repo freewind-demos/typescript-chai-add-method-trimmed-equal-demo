@@ -1,7 +1,7 @@
-TypeScript Mocha Chai Testing Demo
+TypeScript Chai Add Method Demo
 ==================================
 
-Use mocha and chai to write tests with typescript.
+使用`chai.Assertion.addMethod`添加自己的matcher
 
 ```
 npm install

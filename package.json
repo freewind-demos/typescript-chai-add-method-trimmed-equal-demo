@@ -3,11 +3,11 @@
     "test": "mocha -r ts-node/register *-test.ts"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/mocha": "^5.2.5",
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "ts-node": "7.0.0",
-    "typescript": "3.0.1"
+    "@types/chai": "4.1.7",
+    "@types/mocha": "5.2.6",
+    "chai": "4.2.0",
+    "mocha": "6.1.4",
+    "ts-node": "8.1.0",
+    "typescript": "3.4.5"
   }
 }
