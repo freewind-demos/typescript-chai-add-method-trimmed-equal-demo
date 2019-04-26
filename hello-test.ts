@@ -5,7 +5,7 @@ registerCustomMethods();
 
 describe('chai', () => {
   it('should work with added method', () => {
-    expect('      Hello ').to.trimmedEqual(' Hexllo         ')
+    expect('      Hello ').to.trimmedEqual(' Hello         ')
   })
 })
 

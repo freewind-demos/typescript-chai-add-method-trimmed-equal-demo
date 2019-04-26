@@ -1,19 +1,10 @@
-import chai from "chai";
-
-declare global {
-  namespace Chai {
-    interface Assertion {
-      trimmedEqual: (expected: string) => Assertion
-    }
-  }
-}
+import chai from 'chai';
+import './typing';
 
 function trimmedEqual() {
-  (chai as any).Assertion.addMethod("trimmedEqual", function (expectedString: string) {
-    // @ts-ignore
+  chai.Assertion.addMethod("trimmedEqual", function (this: Chai.Assertion, expectedString: string) {
     const actual = this._obj.trim();
     const expected = expectedString.trim();
-    // @ts-ignore
     this.assert(
       actual === expected
       , 'expected #{this} to equal string #{exp} after trimmed, but it was #{act} after trimmed'
